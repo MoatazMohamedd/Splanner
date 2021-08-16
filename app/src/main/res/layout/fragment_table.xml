@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-
-
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <GridLayout
         android:id="@+id/test"
@@ -1318,7 +1314,6 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-                    android:maxHeight="40dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
@@ -1530,7 +1525,6 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-                    android:maxHeight="40dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
@@ -1544,14 +1538,12 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-                    android:maxHeight="40dp"
+                    android:layout_marginBottom="80dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="10sp"
                     android:textStyle="bold" />
-
-
 
 
             </GridLayout>
