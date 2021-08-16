@@ -1,0 +1,65 @@
+package com.example.myapplication;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
+import android.widget.GridLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    GridLayout gridLayout;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+
+        gridLayout=findViewById(R.id.gridLayout);
+        TextView textView= (TextView) gridLayout.getChildAt(1);
+
+
+        String msg= "Introduction to Algorithms and Data Structures \n\n";
+        String time= "12:59\nPM\n | \n12:59\nPM";
+
+        int msgLength=msg.length();
+        int timeLength=time.length();
+
+        String total=msg+time;
+
+        SpannableString ss = new SpannableString(total);
+
+        ForegroundColorSpan fcsWhite =new ForegroundColorSpan(Color.WHITE);
+        ss.setSpan(fcsWhite,msgLength+0,msgLength+timeLength, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        textView.setText(ss);
+        textView.setBackgroundColor(Color.CYAN);
+
+        System.out.println(msgLength);
+        System.out.println(timeLength);
+
+
+
+        TextView textView1= (TextView) gridLayout.getChildAt(6);
+        textView1.setText("Algoritasdasdasdasdasdhms");
+        textView1.setBackgroundColor(Color.GREEN);
+
+
+        TextView textView2= (TextView) gridLayout.getChildAt(2);
+        textView2.setText(total);
+        textView2.setBackgroundColor(Color.GREEN);
+
+
+
+
+    }
+}
