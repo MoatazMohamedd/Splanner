@@ -12,4 +12,24 @@
     <string name="friday">Fri</string>
     <string name="saturday">Sat</string>
 
+    <string name="addsubject"><u> Add a subject</u></string>
+    <string name="subject">Subject:</string>
+    <string name="subjectname">Name</string>
+    <string name="subjectday">Day:</string>
+    <string name="subject_time">Choose time:</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End time</string>
+    <string name="save">Save</string>
+
+
+    <string-array name="daysofweek">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+
+    </string-array>
 </resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSubjectActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addsubject"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/subject"
+            />
+
+    <EditText
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/subjectname"
+        android:inputType="textCapSentences"
+        android:background="@color/notif"
+        tools:ignore="Autofill"
+        />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="@string/subjectday"
+        />
+
+    <Spinner
+        android:id="@+id/day_spinner"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/notif"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="@string/subject_time"/>
+
+    <Button
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+       android:backgroundTint="@color/notif"
+        android:textColor="@color/black"
+        android:text="@string/start_time"/>
+
+    <Button
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/notif"
+        android:textColor="@color/black"
+        android:text="@string/end_time" />
+
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/notif"
+        android:text="@string/save"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/black" />
+
+</LinearLayout>
