@@ -28,6 +28,7 @@
             />
 
     <EditText
+        android:id="@+id/subject_name_field"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:padding="5dp"
@@ -68,6 +69,7 @@
         android:text="@string/subject_time"/>
 
     <Button
+        android:id="@+id/start_button"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_width="150dp"
@@ -77,6 +79,7 @@
         android:text="@string/start_time"/>
 
     <Button
+        android:id="@+id/end_button"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_width="150dp"
