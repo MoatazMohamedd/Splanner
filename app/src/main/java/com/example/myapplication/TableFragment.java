@@ -60,4 +60,12 @@ public class TableFragment extends Fragment {
         subjectCell.setText(sharedPreferences.getString("cell"+1,""));
     }
 
+    public void delete()
+    {
+        SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("cell1","").apply();
+        loadSubjects();
+    }
+
     }
