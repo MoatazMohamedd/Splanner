@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import android.app.TimePickerDialog;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -40,14 +42,22 @@ public class TableFragment extends Fragment {
         // from within this view by view.findViewById ...
 
         gridLayout= view.findViewById(R.id.gridLayout);
-        subjectCell= (TextView) gridLayout.getChildAt(5);
+        subjectCell= (TextView) gridLayout.getChildAt(1);
 
        if(subjectCell.getText().equals(""))
         {
             subjectCell.setBackgroundColor(Color.GREEN);
         }
 
+       loadSubjects();
+
         return  view;
+    }
+
+    public void loadSubjects()
+    {
+        SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE);
+        subjectCell.setText(sharedPreferences.getString("cell"+1,""));
     }
 
     }

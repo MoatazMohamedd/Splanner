@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -24,6 +25,14 @@ public class AddSubjectActivity extends AppCompatActivity {
     private int startHour, startMinute, endHour, endMinute;
     private String AM_PM;
     private EditText subjectNameTextField;
+    private Spinner daySpinner;
+
+
+    private String selectedDay;
+    private String totalText;
+    private String subjectName;
+    private String startTimeText;
+    private String endTimeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +46,8 @@ public class AddSubjectActivity extends AppCompatActivity {
         saveButton = findViewById(R.id.save_button);
         startTimeButton = findViewById(R.id.start_button);
         endTimeButton = findViewById(R.id.end_button);
-        subjectNameTextField=findViewById(R.id.subject_name_field);
+        subjectNameTextField = findViewById(R.id.subject_name_field);
+        daySpinner = findViewById(R.id.day_spinner);
 
         //Creating Dropdown menu (Spinner) for days
         Spinner spinner = findViewById(R.id.day_spinner);
@@ -94,8 +104,10 @@ public class AddSubjectActivity extends AppCompatActivity {
             Toast.makeText(AddSubjectActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
         } else {
 
+            addSubject();
             startActivity(intent);
             finish();
+
             Toast.makeText(this, "Subject Added", Toast.LENGTH_SHORT).show();
         }
     }
@@ -159,6 +171,23 @@ public class AddSubjectActivity extends AppCompatActivity {
             return false;
         }
         return true;
+    }
+
+
+    public void addSubject() {
+        subjectName = subjectNameTextField.getText().toString();
+        startTimeText = startTimeButton.getText().toString();
+        endTimeText = endTimeButton.getText().toString();
+
+
+        totalText= subjectName+"\n\n" + startTimeText + "\n" + " | \n" + endTimeText;
+
+    int i =1;
+        SharedPreferences sharedPreferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("cell"+i,totalText);
+        editor.apply();
+
     }
 
 }
