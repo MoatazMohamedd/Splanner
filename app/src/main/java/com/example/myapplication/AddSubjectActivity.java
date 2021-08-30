@@ -104,11 +104,13 @@ public class AddSubjectActivity extends AppCompatActivity {
             Toast.makeText(AddSubjectActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
         } else {
 
+
             addSubject();
+            selectDay();
             startActivity(intent);
             finish();
 
-            Toast.makeText(this, "Subject Added", Toast.LENGTH_SHORT).show();
+
         }
     }
 
@@ -175,9 +177,11 @@ public class AddSubjectActivity extends AppCompatActivity {
 
 
     public void addSubject() {
-        subjectName = subjectNameTextField.getText().toString();
-        startTimeText = startTimeButton.getText().toString();
-        endTimeText = endTimeButton.getText().toString();
+        subjectName = subjectNameTextField.getText().toString().trim();
+        startTimeText = startTimeButton.getText().toString().trim();
+        endTimeText = endTimeButton.getText().toString().trim();
+        selectedDay= daySpinner.getSelectedItem().toString().trim();
+
 
 
         totalText= subjectName+"\n\n" + startTimeText + "\n" + " | \n" + endTimeText;
@@ -188,6 +192,18 @@ public class AddSubjectActivity extends AppCompatActivity {
         editor.putString("cell"+i,totalText);
         editor.apply();
 
+    }
+
+    public void selectDay()
+    {
+
+        switch (selectedDay)
+        {
+            case "Sunday":
+                Toast.makeText(AddSubjectActivity.this,selectedDay,Toast.LENGTH_SHORT).show();
+                break;
+
+        }
     }
 
 }
