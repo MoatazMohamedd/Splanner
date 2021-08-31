@@ -2,12 +2,10 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.app.TimePickerDialog;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -30,6 +28,7 @@ public class AddSubjectActivity extends AppCompatActivity {
 
     private String selectedDay;
     private String totalText;
+
     private String subjectName;
     private String startTimeText;
     private String endTimeText;
@@ -49,15 +48,14 @@ public class AddSubjectActivity extends AppCompatActivity {
         subjectNameTextField = findViewById(R.id.subject_name_field);
         daySpinner = findViewById(R.id.day_spinner);
 
-        //Creating Dropdown menu (Spinner) for days
-        Spinner spinner = findViewById(R.id.day_spinner);
+
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.daysofweek, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinner.setAdapter(adapter);
+        daySpinner.setAdapter(adapter);
 
         //When Save Button is clicked
         saveButton.setOnClickListener(new View.OnClickListener() {
@@ -96,7 +94,8 @@ public class AddSubjectActivity extends AppCompatActivity {
     }
 
     public void save() {
-
+        //Assign input fields text to the string variables declared above
+        addSubject();
         //Check if all the fields required for adding a subject are filled
 
         if (!checkRequiredFields()) {
@@ -105,12 +104,12 @@ public class AddSubjectActivity extends AppCompatActivity {
         } else {
 
 
-            addSubject();
-            selectDay();
+            MyDatabaseHelper myDatabaseHelper = new MyDatabaseHelper(AddSubjectActivity.this);
+            myDatabaseHelper.addSubject(totalText, getPosition(selectedDay));
+
+
             startActivity(intent);
             finish();
-
-
         }
     }
 
@@ -168,7 +167,7 @@ public class AddSubjectActivity extends AppCompatActivity {
     }
 
     public boolean checkRequiredFields() {
-        if (startHour <= 1 || endHour <= 1 || subjectNameTextField.getText().toString().equals("")) {
+        if (startHour < 1 || endHour < 1 || subjectNameTextField.getText().toString().equals("")) {
 
             return false;
         }
@@ -180,30 +179,64 @@ public class AddSubjectActivity extends AppCompatActivity {
         subjectName = subjectNameTextField.getText().toString().trim();
         startTimeText = startTimeButton.getText().toString().trim();
         endTimeText = endTimeButton.getText().toString().trim();
-        selectedDay= daySpinner.getSelectedItem().toString().trim();
+        selectedDay = daySpinner.getSelectedItem().toString().trim();
 
 
+        totalText = subjectName + "\n\n" + startTimeText + "\n" + " | \n" + endTimeText;
 
-        totalText= subjectName+"\n\n" + startTimeText + "\n" + " | \n" + endTimeText;
-
-    int i =1;
-        SharedPreferences sharedPreferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("cell"+i,totalText);
-        editor.apply();
 
     }
 
-    public void selectDay()
-    {
+    public int getPosition(String selectedDay) {
+        int column = getColumn(selectedDay);
 
-        switch (selectedDay)
-        {
+
+        if (TableFragment.loadedPositions.size() == 0)
+            return column;
+
+        for (int i = 0; i < TableFragment.loadedPositions.size(); i++) {
+            if (TableFragment.loadedPositions.get(i) == column) {
+                column += 8;
+            }
+        }
+        return column;
+
+    }
+
+    public int getColumn(String selectedDay) {
+
+        int column = 1;
+
+        switch (selectedDay) {
             case "Sunday":
-                Toast.makeText(AddSubjectActivity.this,selectedDay,Toast.LENGTH_SHORT).show();
+                column = 1;
+                break;
+
+            case "Monday":
+                column = 2;
+                break;
+
+            case "Tuesday":
+                column = 3;
+                break;
+
+            case "Wednesday":
+                column = 4;
+                break;
+
+            case "Thursday":
+                column = 5;
+                break;
+
+            case "Friday":
+                column = 6;
+                break;
+
+            case "Saturday":
+                column = 7;
                 break;
 
         }
+        return column;
     }
-
 }

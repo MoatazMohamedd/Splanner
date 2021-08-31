@@ -33,11 +33,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/bottomNavigationView"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_margin="20dp"
-        app:backgroundTint="#84A9F4"
+        android:contentDescription="@string/addsubject"
         android:src="@drawable/ic_add"
-        />
+        app:backgroundTint="#84A9F4" />
 
 
 </RelativeLayout>

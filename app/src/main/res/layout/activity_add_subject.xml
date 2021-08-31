@@ -1,116 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background">
 
-<LinearLayout
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".AddSubjectActivity"
-    android:orientation="vertical"
-   >
-
-    <TextView
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/addsubject"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        />
+        android:orientation="vertical"
+        tools:context=".AddSubjectActivity">
 
         <TextView
-            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/addsubject"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="@string/subject"
-            />
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/subject_name_field"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:padding="5dp"
-        android:layout_marginBottom="25dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/subjectname"
-        android:inputType="textCapSentences"
-        android:background="@color/notif"
-        tools:ignore="Autofill"
-        />
+        <EditText
+            android:id="@+id/subject_name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="25dp"
+            android:background="@color/notif"
+            android:hint="@string/subjectname"
+            android:inputType="textCapSentences"
+            android:padding="5dp"
+            tools:ignore="Autofill" />
 
-    <TextView
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:text="@string/subjectday"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/subjectday"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-    <Spinner
-        android:id="@+id/day_spinner"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/notif"
-        android:layout_marginBottom="25dp"/>
+        <Spinner
+            android:id="@+id/day_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="25dp"
+            android:background="@color/notif"
+            android:padding="5dp" />
 
-    <TextView
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:text="@string/subject_time"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/subject_time"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/start_button"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-       android:backgroundTint="@color/notif"
-        android:textColor="@color/black"
-        android:text="@string/start_time"/>
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/notif"
+            android:text="@string/start_time"
+            android:textColor="@color/black" />
 
-    <Button
-        android:id="@+id/end_button"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/notif"
-        android:textColor="@color/black"
-        android:text="@string/end_time" />
-
-
-    <Button
-        android:id="@+id/save_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:backgroundTint="@color/notif"
-        android:text="@string/save"
-        android:layout_marginTop="70dp"
-        android:textColor="@color/black" />
+        <Button
+            android:id="@+id/end_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/notif"
+            android:text="@string/end_time"
+            android:textColor="@color/black" />
 
 
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/notif"
+            android:text="@string/save"
+            android:textColor="@color/black" />
 
-</LinearLayout>
+
+    </LinearLayout>
 
 </ScrollView>

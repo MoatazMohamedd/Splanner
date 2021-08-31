@@ -29,9 +29,10 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_margin="9dp"
-            android:text=""
-            android:textColor="#03AA9A"
-            android:textSize="13sp"
+            android:text="SUN"
+            android:textAlignment="center"
+            android:textColor="@color/notif"
+            android:textSize="12sp"
             android:textStyle="bold"
 
             />
@@ -168,6 +169,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
                 android:columnCount="8"
                 android:rowCount="13"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -197,7 +199,7 @@
                     android:text="1"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -207,10 +209,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -220,10 +223,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
+                    android:layout_marginBottom="10dp"
                     android:text=""
-
                     android:textAlignment="center"
-                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -233,11 +237,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
-
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -247,10 +251,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -260,10 +265,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -273,24 +279,26 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
+
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_row="1"
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <!--2nd Row-->
@@ -306,7 +314,7 @@
                     android:text="2"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -316,11 +324,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -330,11 +338,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -344,11 +352,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -358,11 +366,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -372,11 +380,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -386,11 +394,11 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -400,11 +408,11 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <!--3rd Row-->
@@ -420,7 +428,7 @@
                     android:text="3"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -430,11 +438,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -444,11 +452,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -458,11 +466,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -472,11 +480,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -486,11 +494,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -500,11 +508,11 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -514,11 +522,11 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
 
@@ -535,7 +543,7 @@
                     android:text="4"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -545,11 +553,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -559,11 +567,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -573,11 +581,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -587,11 +595,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -601,11 +609,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -615,11 +623,11 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -629,11 +637,11 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <!--5th Row-->
@@ -649,7 +657,7 @@
                     android:text="5"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -659,11 +667,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -673,11 +681,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -687,11 +695,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -701,11 +709,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -715,11 +723,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -729,11 +737,11 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -743,11 +751,11 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <!--6th Row-->
@@ -763,7 +771,7 @@
                     android:text="6"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -773,11 +781,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -787,11 +795,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -801,11 +809,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -815,11 +823,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -829,11 +837,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -843,11 +851,11 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -857,11 +865,11 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <!--7th Row-->
@@ -877,7 +885,7 @@
                     android:text="7"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -887,11 +895,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -901,11 +909,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -915,11 +923,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -929,11 +937,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -943,11 +951,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -957,11 +965,11 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -971,11 +979,11 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <!--8th Row-->
@@ -991,7 +999,7 @@
                     android:text="8"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1001,11 +1009,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1015,11 +1023,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1029,11 +1037,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1043,11 +1051,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1057,11 +1065,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1071,11 +1079,11 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1085,11 +1093,11 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <!--9th Row-->
@@ -1105,7 +1113,7 @@
                     android:text="9"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1115,11 +1123,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1129,11 +1137,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1143,11 +1151,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1157,11 +1165,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1171,11 +1179,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1185,11 +1193,11 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1199,11 +1207,11 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <!--10th Row-->
@@ -1219,7 +1227,7 @@
                     android:text="10"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1229,11 +1237,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1243,11 +1251,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1257,11 +1265,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1271,10 +1279,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1284,11 +1293,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1298,11 +1307,11 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1312,10 +1321,11 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <!--11th Row-->
@@ -1331,7 +1341,7 @@
                     android:text="11"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1341,11 +1351,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1355,11 +1365,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1369,11 +1379,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1383,11 +1393,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1397,11 +1407,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1411,11 +1421,11 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1425,11 +1435,11 @@
                     android:layout_column="7"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <!--12th Row-->
@@ -1445,7 +1455,7 @@
                     android:text="12"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1455,11 +1465,11 @@
                     android:layout_column="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1469,11 +1479,11 @@
                     android:layout_column="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1483,11 +1493,11 @@
                     android:layout_column="3"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1497,10 +1507,11 @@
                     android:layout_column="4"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1510,10 +1521,11 @@
                     android:layout_column="5"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1523,10 +1535,11 @@
                     android:layout_column="6"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
+                    android:layout_marginBottom="10dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -1540,7 +1553,7 @@
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold" />
 
 
