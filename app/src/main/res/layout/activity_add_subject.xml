@@ -37,7 +37,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/round_button"
+            android:background="@drawable/selector"
             android:hint="@string/subjectname"
             android:paddingStart="5dp"
             android:inputType="textCapSentences"
@@ -59,7 +59,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/round_button"
+            android:background="@drawable/selector"
             android:padding="5dp" />
 
         <TextView
@@ -77,8 +77,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/round_button"
-            android:backgroundTint="@color/buttons"
+            android:background="@drawable/selector"
             android:text="@string/start_time"
             android:textColor="@color/black" />
 
@@ -88,9 +87,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:backgroundTint="@color/buttons"
             android:text="@string/end_time"
-            android:background="@drawable/round_button"
+            android:background="@drawable/selector"
             android:textColor="@color/black" />
 
 
@@ -103,7 +101,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginEnd="10dp"
             android:text="@string/save"
-            android:background="@drawable/round_button"
+            android:background="@drawable/selector"
             android:textColor="@color/black" />
 
 

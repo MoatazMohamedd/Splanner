@@ -38,7 +38,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/round_button"
+            android:background="@drawable/selector"
             android:hint="@string/subjectname"
             android:inputType="textCapSentences"
             android:padding="5dp"
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:background="@drawable/round_button"
+            android:background="@drawable/selector"
             android:paddingHorizontal="5dp"
             android:text="Choose"
             android:textColor="@color/black" />
@@ -73,8 +73,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="70dp"
             android:layout_marginEnd="10dp"
-            android:background="@drawable/round_button"
-            android:backgroundTint="@color/buttons"
+            android:background="@drawable/selector"
             android:text="@string/save"
             android:textColor="@color/black" />
 

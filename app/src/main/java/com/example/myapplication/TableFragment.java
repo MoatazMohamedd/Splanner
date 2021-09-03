@@ -90,7 +90,7 @@ public class TableFragment extends Fragment {
 
             subjectCell = (TextView) gridLayout.getChildAt(loadedPositions.get(i));
             subjectCell.setText(loadedSubjects.get(i));
-            subjectCell.setBackgroundColor(Color.WHITE);
+            subjectCell.setBackgroundResource(R.drawable.round_button);
         }
     }
 }

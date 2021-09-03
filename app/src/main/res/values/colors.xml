@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="notif">#085D85</color>
     <color name="buttons">#CCDBDC</color>
+    <color name="selected_button">#B3C0C0</color>
     <color name="background">#007EA7</color>
 </resources>

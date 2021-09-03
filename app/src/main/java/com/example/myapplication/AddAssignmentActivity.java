@@ -44,6 +44,9 @@ public class AddAssignmentActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 selectStartTime();
+
+                System.out.println(selectedDay);
+                System.out.println(calendar.get(Calendar.DAY_OF_WEEK - 2));
             }
         });
 
@@ -51,10 +54,17 @@ public class AddAssignmentActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // Minus 2 because when I get the day of week it chooses the wrong day
-                // if today's day is 3 then it shows 5
 
-                if (selectedDay < calendar.get(Calendar.DAY_OF_WEEK - 2))
+                if (selectedYear < calendar.get(Calendar.YEAR))
+                    Toast.makeText(AddAssignmentActivity.this, "Choose a day in the future", Toast.LENGTH_SHORT).show();
+
+                    // Minus 2 because when I get the day of week it chooses the wrong day
+                    // if today's day is 3 then it shows 5
+
+                else if (selectedYear == calendar.get(Calendar.YEAR) && selectedDay < calendar.get(Calendar.DAY_OF_WEEK - 2))
+                    Toast.makeText(AddAssignmentActivity.this, "Choose a day in the future", Toast.LENGTH_SHORT).show();
+
+                else if (selectedYear == calendar.get(Calendar.YEAR) && selectedMonth < calendar.get(Calendar.MONTH))
                     Toast.makeText(AddAssignmentActivity.this, "Choose a day in the future", Toast.LENGTH_SHORT).show();
 
                 else
@@ -74,6 +84,9 @@ public class AddAssignmentActivity extends AppCompatActivity {
 
 
                 selectedDay = day;
+                selectedMonth = month;
+                selectedYear = year;
+
                 dateButton.setText(String.valueOf(day) + "/" + String.valueOf(month + 1) + "/" + String.valueOf(year));
 
 
