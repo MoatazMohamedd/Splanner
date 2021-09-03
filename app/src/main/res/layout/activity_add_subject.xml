@@ -13,6 +13,8 @@
         tools:context=".AddSubjectActivity">
 
         <TextView
+           android:paddingHorizontal="10dp"
+            android:background="@drawable/round_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -35,8 +37,9 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="25dp"
-            android:background="@color/buttons"
+            android:background="@drawable/round_button"
             android:hint="@string/subjectname"
+            android:paddingStart="5dp"
             android:inputType="textCapSentences"
             android:padding="5dp"
             tools:ignore="Autofill" />
@@ -56,7 +59,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="25dp"
-            android:background="@color/buttons"
+            android:background="@drawable/round_button"
             android:padding="5dp" />
 
         <TextView
@@ -67,17 +70,19 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/start_button"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button"
             android:backgroundTint="@color/buttons"
             android:text="@string/start_time"
             android:textColor="@color/black" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/end_button"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
@@ -85,11 +90,11 @@
             android:layout_marginEnd="10dp"
             android:backgroundTint="@color/buttons"
             android:text="@string/end_time"
+            android:background="@drawable/round_button"
             android:textColor="@color/black" />
 
 
-        <Button
-            android:elevation="20dp"
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/save_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,8 +102,8 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="70dp"
             android:layout_marginEnd="10dp"
-            android:backgroundTint="@color/buttons"
             android:text="@string/save"
+            android:background="@drawable/round_button"
             android:textColor="@color/black" />
 
 
