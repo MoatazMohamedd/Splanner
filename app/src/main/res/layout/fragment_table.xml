@@ -11,7 +11,7 @@
         android:id="@+id/test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#6B99F8"
+        android:background="#085D85"
         android:columnCount="8"
         android:rowCount="1"
 
@@ -31,7 +31,7 @@
             android:layout_margin="9dp"
             android:text="SUN"
             android:textAlignment="center"
-            android:textColor="@color/notif"
+            android:textColor="#085D85"
             android:textSize="12sp"
             android:textStyle="bold"
 
@@ -46,7 +46,7 @@
             android:layout_margin="9dp"
             android:text="@string/sunday"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold"
 
@@ -60,7 +60,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="9dp"
             android:text=""
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold"
 
@@ -75,7 +75,7 @@
             android:layout_margin="9dp"
             android:text="@string/monday"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold" />
 
@@ -88,7 +88,7 @@
             android:layout_margin="9dp"
             android:text="@string/tuesday"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold" />
 
@@ -101,7 +101,7 @@
             android:layout_margin="9dp"
             android:text="@string/wednesday"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold" />
 
@@ -114,7 +114,7 @@
             android:layout_margin="9dp"
             android:text="@string/thursday"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold" />
 
@@ -127,7 +127,7 @@
             android:layout_margin="9dp"
             android:text="@string/friday"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold" />
 
@@ -140,7 +140,7 @@
             android:layout_margin="9dp"
             android:text="@string/saturday"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold"
 
@@ -155,7 +155,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/test"
-        android:background="@drawable/gradient_background">
+        android:background="#007EA7">
 
         <androidx.constraintlayout.widget.ConstraintLayout
 

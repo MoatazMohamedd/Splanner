@@ -20,6 +20,9 @@
     <string name="start_time">Start Time</string>
     <string name="end_time">End time</string>
     <string name="save">Save</string>
+    <string name="add_an_assignment">Add an assignment</string>
+    <string name="assignment">Assignment:</string>
+    <string name="due_date">Due date:</string>
 
 
     <string-array name="daysofweek">

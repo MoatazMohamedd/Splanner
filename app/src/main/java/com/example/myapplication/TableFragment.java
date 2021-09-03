@@ -35,6 +35,8 @@ public class TableFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        MainActivity.fragmentNumber=1;
+
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_table, container, false);
         myDB = new MyDatabaseHelper(getActivity().getBaseContext());
@@ -62,7 +64,7 @@ public class TableFragment extends Fragment {
     // and inserting them in arrays
     void loadSubjects() {
 
-        Cursor cursor = myDB.loadData();
+        Cursor cursor = myDB.loadSubjects();
 
         if (loadedSubjects.size() > 0)
             return;

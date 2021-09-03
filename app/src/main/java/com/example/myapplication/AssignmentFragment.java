@@ -59,6 +59,8 @@ public class AssignmentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        MainActivity.fragmentNumber=2;
         return inflater.inflate(R.layout.fragment_assignment, container, false);
     }
 }

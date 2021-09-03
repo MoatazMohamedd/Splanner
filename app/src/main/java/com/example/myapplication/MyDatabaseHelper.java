@@ -14,10 +14,17 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public Context context;
     private static final String DATABASE_NAME = "Splanner.db";
     private static final int DATABASE_VERSION = 1;
-    private static final String TABLE_NAME = "my_subjects";
+    private static final String TABLE_NAME1 = "my_subjects";
     private static final String COLUMN_ID = "_id";
     private static final String COLUMN_SUBJECT = "subject";
     private static final String COLUMN_POSITION = "position";
+
+
+    private static final String TABLE_NAME2 = "my_subjects";
+    private static final String COLUMN_ASSIGNMENT = "assignment";
+    private static final String COLUMN_DATE = "date";
+
+
 
     public MyDatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -27,10 +34,10 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        String query = "CREATE TABLE " + TABLE_NAME + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+        String subjectQuery = "CREATE TABLE " + TABLE_NAME1 + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_SUBJECT + " TEXT, " + COLUMN_POSITION + " INTEGER);";
 
-        db.execSQL(query);
+        db.execSQL(subjectQuery);
     }
 
     @Override
@@ -47,7 +54,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COLUMN_SUBJECT, subject);
         contentValues.put(COLUMN_POSITION, position);
 
-        long result = db.insert(TABLE_NAME, null, contentValues);
+        long result = db.insert(TABLE_NAME1, null, contentValues);
 
         if (result == -1) {
             Toast.makeText(context, "Failed to add subject", Toast.LENGTH_SHORT).show();
@@ -56,8 +63,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    Cursor loadData() {
-        String query = "SELECT * FROM " + TABLE_NAME;
+    Cursor loadSubjects() {
+        String query = "SELECT * FROM " + TABLE_NAME1;
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = null;

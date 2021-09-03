@@ -152,6 +152,8 @@ public class AddSubjectActivity extends AppCompatActivity {
     }
 
 
+
+
     public int handleHourText(int hour) {
         if (hour < 12) {
             AM_PM = "AM";
