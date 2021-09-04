@@ -9,9 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -20,11 +22,14 @@ public class AddAssignmentActivity extends AppCompatActivity {
     private Intent intent;
     private Button dateButton;
     private Button saveButton;
+    private EditText assignmentInput;
 
 
     private Calendar calendar;
 
+
     int selectedYear, selectedDay, selectedMonth;
+    String assignmentName, totalDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,15 +43,14 @@ public class AddAssignmentActivity extends AppCompatActivity {
 
         dateButton = findViewById(R.id.date_button);
         saveButton = findViewById(R.id.save_button);
+        assignmentInput = findViewById(R.id.assignment_name_field);
+
 
         dateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                selectStartTime();
-
-                System.out.println(selectedDay);
-                System.out.println(calendar.get(Calendar.DAY_OF_WEEK - 2));
+                chooseDate();
             }
         });
 
@@ -67,8 +71,20 @@ public class AddAssignmentActivity extends AppCompatActivity {
                 else if (selectedYear == calendar.get(Calendar.YEAR) && selectedMonth < calendar.get(Calendar.MONTH))
                     Toast.makeText(AddAssignmentActivity.this, "Choose a day in the future", Toast.LENGTH_SHORT).show();
 
-                else
-                    Toast.makeText(AddAssignmentActivity.this, "Assignment added successfully!", Toast.LENGTH_SHORT).show();
+                else if (checkRequiredFields()) {
+                    assignmentName = assignmentInput.getText().toString().trim();
+
+                    MyDatabaseHelper myDB = new MyDatabaseHelper(AddAssignmentActivity.this);
+                    myDB.addAssignment(assignmentName, "Due Date: " + totalDate);
+
+                    startActivity(intent);
+                    finish();
+                }
+
+                    else
+                        Toast.makeText(AddAssignmentActivity.this, "Please fill all fields",Toast.LENGTH_SHORT).show();
+
+
             }
         });
 
@@ -76,7 +92,7 @@ public class AddAssignmentActivity extends AppCompatActivity {
     }
 
 
-    public void selectStartTime() {
+    public void chooseDate() {
 
         DatePickerDialog.OnDateSetListener onDateSetListener = new DatePickerDialog.OnDateSetListener() {
             @Override
@@ -87,7 +103,9 @@ public class AddAssignmentActivity extends AppCompatActivity {
                 selectedMonth = month;
                 selectedYear = year;
 
-                dateButton.setText(String.valueOf(day) + "/" + String.valueOf(month + 1) + "/" + String.valueOf(year));
+                totalDate = String.valueOf(day) + "/" + String.valueOf(month + 1) + "/" + String.valueOf(year);
+
+                dateButton.setText(totalDate);
 
 
             }
@@ -104,6 +122,14 @@ public class AddAssignmentActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
         super.onBackPressed();
+    }
+
+    public boolean checkRequiredFields() {
+        if (assignmentInput.getText().toString().equals("")) {
+
+            return false;
+        }
+        return true;
     }
 
 }
