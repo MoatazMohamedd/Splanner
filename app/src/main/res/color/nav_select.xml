@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        This is a color selector that let's me select an item
+        to be shown when the button is clicked for example-->
+
+    <item android:color="@color/black" android:state_checked="true" />
+
+    <item android:color="@color/white"/>
+
+
+</selector>

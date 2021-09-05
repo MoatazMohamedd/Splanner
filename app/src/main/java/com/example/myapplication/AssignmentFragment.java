@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 import java.util.ArrayList;
@@ -48,8 +49,14 @@ public class AssignmentFragment extends Fragment {
 
         loadData();
 
+        TextView hintText = view.findViewById(R.id.hint);
 
-        customAdapter = new CustomAdapter(getActivity(), loadedAssignments, loadedDates);
+        if (loadedAssignments.size() > 0)
+            hintText.setVisibility(View.INVISIBLE);
+
+        else hintText.setVisibility(View.VISIBLE);
+
+            customAdapter = new CustomAdapter(getActivity(), loadedAssignments, loadedDates);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 

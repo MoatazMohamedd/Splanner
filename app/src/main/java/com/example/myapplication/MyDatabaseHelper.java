@@ -25,7 +25,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_DATE = "date";
 
     private static final String TABLE_NAME3 = "my_exams";
-    private static final String COLUMN_EXAM= "exam";
+    private static final String COLUMN_EXAM = "exam";
 
 
     public MyDatabaseHelper(@Nullable Context context) {
@@ -100,7 +100,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         if (result == -1) {
             Toast.makeText(context, "Failed to add assignment", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context, "Assignment added successfully!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Assignment added successfully", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -142,7 +142,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         if (result == -1) {
             Toast.makeText(context, "Failed to add exam", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context, "Exam added successfully!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Exam added successfully", Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -55,18 +55,35 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             @Override
             public void onClick(View view) {
 
+                String message;
+
+                if (MainActivity.fragmentNumber == 2)
+                    message = " assignment?";
+
+                else message = " exam?";
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder.setTitle("Delete " + name.get(holder.getAdapterPosition()));
-                builder.setMessage("Are you sure you want to delete this assignment?");
+                builder.setTitle("Delete \"" + name.get(holder.getAdapterPosition()) + "\"");
+                builder.setMessage("Are you sure you want to delete this" + message);
                 builder.setCancelable(false);
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
                         MyDatabaseHelper db = new MyDatabaseHelper(context);
-                        db.deleteAssignment(String.valueOf(name.get(holder.getAdapterPosition())));
 
-                        AssignmentFragment.loadedAssignments.remove(holder.getAdapterPosition());
+                        if (MainActivity.fragmentNumber == 2) {
+                            db.deleteAssignment(String.valueOf(name.get(holder.getAdapterPosition())));
+
+                            AssignmentFragment.loadedAssignments.remove(holder.getAdapterPosition());
+
+                        } else {
+
+                            db.deleteExam(String.valueOf(name.get(holder.getAdapterPosition())));
+
+                            ExamFragment.loadedExams.remove(holder.getAdapterPosition());
+
+                        }
                         notifyItemRemoved(holder.getAdapterPosition());
                     }
                 });

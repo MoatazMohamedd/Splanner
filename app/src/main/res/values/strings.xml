@@ -28,6 +28,8 @@
     <string name="your_total_exams">Your Total Exams</string>
     <string name="add_exam">Add Exam</string>
     <string name="exam">Exam</string>
+    <string name="assignment_hint">Click \"+\" button to add a new assignment.</string>
+    <string name="exam_hint">Click \"+\" button to add a new exam.</string>
 
 
     <string-array name="daysofweek">

@@ -5,31 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".AssignmentFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".AssignmentFragment">
 
 
     <TextView
-        android:background="@color/notif"
         android:id="@+id/assignments_count"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/notif"
         android:padding="10dp"
-        android:textAlignment="center"
         android:text="@string/your_total_assignments"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18sp"
-        android:textStyle="bold"
-/>
+        android:textStyle="bold" />
 
 
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/recycler_view"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="85dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp" />
 
 
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/assignment_hint"
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

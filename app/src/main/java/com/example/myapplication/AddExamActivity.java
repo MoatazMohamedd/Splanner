@@ -72,7 +72,7 @@ public class AddExamActivity extends AppCompatActivity {
                     examName = examInput.getText().toString().trim();
 
                     MyDatabaseHelper myDB = new MyDatabaseHelper(AddExamActivity.this);
-                    myDB.addAssignment(examName, "Due Date: " + totalDate);
+                    myDB.addExam(examName, "Due Date: " + totalDate);
 
                     startActivity(intent);
                     finish();
