@@ -7,7 +7,6 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -18,7 +17,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class MainActivity extends AppCompatActivity {
 
     private Intent intent;
-    public static int fragmentNumber=1;
+    public static int fragmentNumber = 1;
 
 
     @Override
@@ -44,15 +43,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(fragmentNumber==1) {
-                    intent= new Intent(MainActivity.this,AddSubjectActivity.class);
+                if (fragmentNumber == 1) {
+                    intent = new Intent(MainActivity.this, AddSubjectActivity.class);
                     startActivity(intent);
                     finish();
                 }
 
-                if(fragmentNumber==2) {
+                if (fragmentNumber == 2) {
 
-                    intent= new Intent(MainActivity.this,AddAssignmentActivity.class);
+                    intent = new Intent(MainActivity.this, AddAssignmentActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+
+                if (fragmentNumber == 3) {
+
+                    intent = new Intent(MainActivity.this, AddExamActivity.class);
                     startActivity(intent);
                     finish();
                 }

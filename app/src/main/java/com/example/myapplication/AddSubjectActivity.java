@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class AddSubjectActivity extends AppCompatActivity {
 
     private Intent intent;
-    private Button saveButton;
+    Button saveButton;
     private Button startTimeButton;
     private Button endTimeButton;
     private int startHour, startMinute, endHour, endMinute;
@@ -29,9 +29,9 @@ public class AddSubjectActivity extends AppCompatActivity {
     private String selectedDay;
     private String totalText;
 
-    private String subjectName;
-    private String startTimeText;
-    private String endTimeText;
+    String subjectName;
+    String startTimeText;
+    String endTimeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,8 +150,6 @@ public class AddSubjectActivity extends AppCompatActivity {
         TimePickerDialog timePickerDialog = new TimePickerDialog(this, onTimeSetListener, endHour, endMinute, false);
         timePickerDialog.show();
     }
-
-
 
 
     public int handleHourText(int hour) {

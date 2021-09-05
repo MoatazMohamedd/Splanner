@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textAlignment="center"
-        android:text="You have 10 new assignments. "
+        android:text="@string/your_total_assignments"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -27,7 +27,7 @@
     android:id="@+id/recycler_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="85dp"/>
+    android:layout_marginBottom="85dp" />
 
 
 

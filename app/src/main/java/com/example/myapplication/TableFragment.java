@@ -2,7 +2,6 @@ package com.example.myapplication;
 
 
 import android.database.Cursor;
-import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -35,11 +33,11 @@ public class TableFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        MainActivity.fragmentNumber=1;
+        MainActivity.fragmentNumber = 1;
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_table, container, false);
-        myDB = new MyDatabaseHelper(getActivity().getBaseContext());
+        myDB = new MyDatabaseHelper(getActivity());
 
         loadedSubjects = new ArrayList<>();
         loadedPositions = new ArrayList<>();
@@ -69,16 +67,14 @@ public class TableFragment extends Fragment {
         if (loadedSubjects.size() > 0)
             return;
 
-        if (cursor.getCount() == 0) {
-            Toast.makeText(getContext(), "No data found", Toast.LENGTH_SHORT).show();
-        } else {
+        else
             while (cursor.moveToNext()) {
 
                 loadedSubjects.add(cursor.getString(1));
                 loadedPositions.add(Integer.valueOf(cursor.getString(2)));
 
             }
-        }
+
     }
 
     // Used to display the loaded data

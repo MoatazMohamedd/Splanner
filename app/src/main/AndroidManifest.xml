@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".AddExamActivity"
+            android:exported="true" />
+        <activity
             android:name=".AddAssignmentActivity"
             android:exported="true" />
         <activity

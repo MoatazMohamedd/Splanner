@@ -15,23 +15,23 @@ import android.widget.Toast;
 import java.util.Calendar;
 
 
-public class AddAssignmentActivity extends AppCompatActivity {
+public class AddExamActivity extends AppCompatActivity {
 
     private Intent intent;
     private Button dateButton;
-    private EditText assignmentInput;
+    private EditText examInput;
 
 
     private Calendar calendar;
 
 
     int selectedYear, selectedDay, selectedMonth;
-    String assignmentName, totalDate;
+    String examName, totalDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_assignment);
+        setContentView(R.layout.activity_add_exam);
 
         getSupportActionBar().hide();
         calendar = Calendar.getInstance();
@@ -40,7 +40,7 @@ public class AddAssignmentActivity extends AppCompatActivity {
 
         dateButton = findViewById(R.id.date_button);
         Button saveButton = findViewById(R.id.save_button);
-        assignmentInput = findViewById(R.id.assignment_name_field);
+        examInput = findViewById(R.id.exam_name_field);
 
 
         dateButton.setOnClickListener(new View.OnClickListener() {
@@ -57,29 +57,27 @@ public class AddAssignmentActivity extends AppCompatActivity {
 
 
                 if (selectedYear < calendar.get(Calendar.YEAR))
-                    Toast.makeText(AddAssignmentActivity.this, "Choose a day in the future", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddExamActivity.this, "Choose a day in the future", Toast.LENGTH_SHORT).show();
 
                     // Minus 2 because when I get the day of week it chooses the wrong day
                     // if today's day is 3 then it shows 5
 
                 else if (selectedYear == calendar.get(Calendar.YEAR) && selectedDay < calendar.get(Calendar.DAY_OF_WEEK - 2))
-                    Toast.makeText(AddAssignmentActivity.this, "Choose a day in the future", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddExamActivity.this,"Choose a day in the future", Toast.LENGTH_SHORT).show();
 
                 else if (selectedYear == calendar.get(Calendar.YEAR) && selectedMonth < calendar.get(Calendar.MONTH))
-                    Toast.makeText(AddAssignmentActivity.this, "Choose a day in the future", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddExamActivity.this,"Choose a day in the future", Toast.LENGTH_SHORT).show();
 
                 else if (checkRequiredFields()) {
-                    assignmentName = assignmentInput.getText().toString().trim();
+                    examName = examInput.getText().toString().trim();
 
-                    MyDatabaseHelper myDB = new MyDatabaseHelper(AddAssignmentActivity.this);
-                    myDB.addAssignment(assignmentName, "Due Date: " + totalDate);
-
+                    MyDatabaseHelper myDB = new MyDatabaseHelper(AddExamActivity.this);
+                    myDB.addAssignment(examName, "Due Date: " + totalDate);
 
                     startActivity(intent);
                     finish();
-
                 } else
-                    Toast.makeText(AddAssignmentActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddExamActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
 
 
             }
@@ -122,7 +120,7 @@ public class AddAssignmentActivity extends AppCompatActivity {
     }
 
     public boolean checkRequiredFields() {
-        if (assignmentInput.getText().toString().equals("")) {
+        if (examInput.getText().toString().equals("")) {
 
             return false;
         }

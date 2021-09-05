@@ -23,6 +23,11 @@
     <string name="add_an_assignment">Add Assignment</string>
     <string name="assignment">Assignment</string>
     <string name="due_date">Due date</string>
+    <string name="your_total_assignments">Your Total Assignments</string>
+    <string name="choose">Choose</string>
+    <string name="your_total_exams">Your Total Exams</string>
+    <string name="add_exam">Add Exam</string>
+    <string name="exam">Exam</string>
 
 
     <string-array name="daysofweek">

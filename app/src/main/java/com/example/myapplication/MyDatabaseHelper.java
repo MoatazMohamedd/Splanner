@@ -24,6 +24,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_ASSIGNMENT = "assignment";
     private static final String COLUMN_DATE = "date";
 
+    private static final String TABLE_NAME3 = "my_exams";
+    private static final String COLUMN_EXAM= "exam";
 
 
     public MyDatabaseHelper(@Nullable Context context) {
@@ -40,8 +42,12 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         String assignmentQuery = "CREATE TABLE " + TABLE_NAME2 + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_ASSIGNMENT + " TEXT, " + COLUMN_DATE + " TEXT);";
 
+        String examQuery = "CREATE TABLE " + TABLE_NAME3 + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_EXAM + " TEXT, " + COLUMN_DATE + " TEXT);";
+
         db.execSQL(subjectQuery);
         db.execSQL(assignmentQuery);
+        db.execSQL(examQuery);
     }
 
     @Override
@@ -86,7 +92,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(COLUMN_ASSIGNMENT,assignment);
+        contentValues.put(COLUMN_ASSIGNMENT, assignment);
         contentValues.put(COLUMN_DATE, date);
 
         long result = db.insert(TABLE_NAME2, null, contentValues);
@@ -109,5 +115,59 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
         return cursor;
 
+    }
+
+
+    void deleteAssignment(String name) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        long result = db.delete(TABLE_NAME2, "assignment=?", new String[]{name});
+
+        if (result == -1)
+            Toast.makeText(context, "Failed to delete", Toast.LENGTH_SHORT).show();
+        else
+            Toast.makeText(context, "Assignment deleted successfully", Toast.LENGTH_SHORT).show();
+    }
+
+    void addExam(String exam, String date) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(COLUMN_EXAM, exam);
+        contentValues.put(COLUMN_DATE, date);
+
+        long result = db.insert(TABLE_NAME3, null, contentValues);
+
+        if (result == -1) {
+            Toast.makeText(context, "Failed to add exam", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(context, "Exam added successfully!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    Cursor loadExams() {
+        String query = "SELECT * FROM " + TABLE_NAME3;
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+
+        if (db != null)
+            cursor = db.rawQuery(query, null);
+
+        return cursor;
+
+    }
+
+
+    void deleteExam(String name) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        long result = db.delete(TABLE_NAME3, "exam=?", new String[]{name});
+
+        if (result == -1)
+            Toast.makeText(context, "Failed to delete", Toast.LENGTH_SHORT).show();
+        else
+            Toast.makeText(context, "Exam deleted successfully", Toast.LENGTH_SHORT).show();
     }
 }
