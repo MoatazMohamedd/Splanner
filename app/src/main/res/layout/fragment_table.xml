@@ -149,6 +149,17 @@
 
     </GridLayout>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="95dp"
+        android:backgroundTint="@color/buttons"
+        android:src="@drawable/ic_delete" />
+
 
     <ScrollView
         android:id="@+id/ah"
@@ -1451,7 +1462,7 @@
                     android:layout_column="0"
                     android:layout_columnWeight="1"
                     android:layout_margin="2dp"
-                    android:layout_marginBottom="60dp"
+                    android:layout_marginBottom="160dp"
                     android:text="12"
                     android:textAlignment="center"
                     android:textColor="@color/black"

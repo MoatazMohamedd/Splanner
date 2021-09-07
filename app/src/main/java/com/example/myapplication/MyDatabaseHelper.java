@@ -86,6 +86,25 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     }
 
+    void deleteSubject(String position) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        long result = db.delete(TABLE_NAME1, "position=?", new String[]{position});
+
+        if (result == -1)
+            Toast.makeText(context, "Failed to delete", Toast.LENGTH_SHORT).show();
+        else
+            Toast.makeText(context, "Subject deleted successfully", Toast.LENGTH_SHORT).show();
+    }
+
+
+    void deleteAllSubjects() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_NAME1);
+        Toast.makeText(context, "All subjects deleted", Toast.LENGTH_SHORT).show();
+    }
+
 
     void addAssignment(String assignment, String date) {
 

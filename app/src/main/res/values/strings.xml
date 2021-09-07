@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
     <string name="sunday">Sun</string>
@@ -15,7 +13,7 @@
     <string name="addsubject"> Add Subject</string>
     <string name="subject">Subject</string>
     <string name="subjectname">Name</string>
-    <string name="subjectday">Day</string>
+    <string name="subject_day">Day</string>
     <string name="subject_time">Choose time</string>
     <string name="start_time">Start Time</string>
     <string name="end_time">End time</string>
@@ -30,9 +28,13 @@
     <string name="exam">Exam</string>
     <string name="assignment_hint">Click \"+\" button to add\n a new assignment.</string>
     <string name="exam_hint">Click \"+\" button to add\n a new exam.</string>
+    <string name="delete_subject">Delete Subject</string>
+    <string name="course_number">Course number</string>
+    <string name="delete">Delete</string>
+    <string name="delete_all_subjects">Delete All Subjects</string>
 
 
-    <string-array name="daysofweek">
+    <string-array name="days_of_week">
         <item>Sunday</item>
         <item>Monday</item>
         <item>Tuesday</item>
@@ -42,4 +44,22 @@
         <item>Saturday</item>
 
     </string-array>
+
+    <string-array name="course_numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+
+    </string-array>
+
 </resources>

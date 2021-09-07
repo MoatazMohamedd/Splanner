@@ -18,7 +18,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/round_button"
             android:paddingHorizontal="10dp"
-            android:text="@string/addsubject"
+            android:text="@string/delete_subject"
             android:textColor="@color/black"
             android:textSize="30sp" />
 
@@ -26,23 +26,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/subject"
+            android:text="@string/course_number"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/subject_name_field"
+        <Spinner
+            android:id="@+id/number_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="25dp"
             android:background="@drawable/selector"
-            android:hint="@string/subjectname"
-            android:inputType="textCapSentences"
-            android:padding="5dp"
-            android:paddingHorizontal="5dp"
-            tools:ignore="Autofill" />
+            android:padding="5dp" />
+
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,48 +60,35 @@
             android:background="@drawable/selector"
             android:padding="5dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/subject_time"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/start_button"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/selector"
-            android:text="@string/start_time"
-            android:textColor="@color/black" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/end_button"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/selector"
-            android:text="@string/end_time"
-            android:textColor="@color/black" />
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/save_button"
+            android:id="@+id/delete_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
             android:layout_marginTop="70dp"
             android:layout_marginEnd="10dp"
+            android:background="@drawable/selector"
+            android:text="@string/delete"
+            android:textStyle="bold"
+            android:textColor="#FF0000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_all"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/selector"
-            android:text="@string/save"
-            android:textColor="@color/black" />
+            android:text="@string/delete_all_subjects"
+            android:textColor="#FF0000" />
 
 
     </LinearLayout>
