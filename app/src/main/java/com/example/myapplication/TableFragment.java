@@ -19,8 +19,8 @@ public class TableFragment extends Fragment {
 
 
     private GridLayout gridLayout;
-    private MyDatabaseHelper myDB;
-    private ArrayList<String> loadedSubjects;
+
+    ArrayList<String> loadedSubjects;
     public static ArrayList<Integer> loadedPositions;
 
     @Override
@@ -33,14 +33,9 @@ public class TableFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        MainActivity.fragmentNumber = 1;
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_table, container, false);
-        myDB = new MyDatabaseHelper(getActivity());
-
-        loadedSubjects = new ArrayList<>();
-        loadedPositions = new ArrayList<>();
 
 
         // To access a certain view in fragment
@@ -50,10 +45,18 @@ public class TableFragment extends Fragment {
 
         gridLayout = view.findViewById(R.id.gridLayout);
 
+        loadedSubjects = new ArrayList<>();
+        loadedPositions = new ArrayList<>();
 
-        loadSubjects();
+        if (loadedPositions.size() == 0) {
+
+            loadSubjects();
+        }
+
         displaySubjects();
 
+
+        MainActivity.fragmentNumber = 1;
         return view;
     }
 
@@ -62,18 +65,16 @@ public class TableFragment extends Fragment {
     // and inserting them in arrays
     void loadSubjects() {
 
+        MyDatabaseHelper myDB = new MyDatabaseHelper(getActivity());
         Cursor cursor = myDB.loadSubjects();
 
-        if (loadedSubjects.size() > 0)
-            return;
 
-        else
-            while (cursor.moveToNext()) {
+        while (cursor.moveToNext()) {
 
-                loadedSubjects.add(cursor.getString(1));
-                loadedPositions.add(Integer.valueOf(cursor.getString(2)));
+            loadedSubjects.add(cursor.getString(1));
+            loadedPositions.add(Integer.valueOf(cursor.getString(2)));
 
-            }
+        }
 
     }
 

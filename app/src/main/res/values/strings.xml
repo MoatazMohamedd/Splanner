@@ -23,13 +23,13 @@
     <string name="add_an_assignment">Add Assignment</string>
     <string name="assignment">Assignment</string>
     <string name="due_date">Due date</string>
-    <string name="your_total_assignments">Your Total Assignments</string>
+    <string name="your_total_assignments">Your Pending Assignments</string>
     <string name="choose">Choose</string>
-    <string name="your_total_exams">Your Total Exams</string>
+    <string name="your_total_exams">Your Upcoming Exams</string>
     <string name="add_exam">Add Exam</string>
     <string name="exam">Exam</string>
-    <string name="assignment_hint">Click \"+\" button to add a new assignment.</string>
-    <string name="exam_hint">Click \"+\" button to add a new exam.</string>
+    <string name="assignment_hint">Click \"+\" button to add\n a new assignment.</string>
+    <string name="exam_hint">Click \"+\" button to add\n a new exam.</string>
 
 
     <string-array name="daysofweek">

@@ -20,7 +20,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:padding="5dp"
-                android:background="@color/purple_200"/>
+                android:background="#F89797"/>
 
             <TextView
                 android:id="@+id/assignment_name"
@@ -60,8 +60,8 @@
                 android:layout_marginEnd="10dp"
                 android:backgroundTint="@color/buttons"
                 android:contentDescription="Delete"
-                android:scaleX="1.5"
-                android:scaleY="1.5"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
                 android:src="@drawable/ic_delete"
                 tools:ignore="HardcodedText" />
 

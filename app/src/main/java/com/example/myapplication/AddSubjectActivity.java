@@ -167,7 +167,7 @@ public class AddSubjectActivity extends AppCompatActivity {
     }
 
     public boolean checkRequiredFields() {
-        if (startHour < 1 || endHour < 1 || subjectNameTextField.getText().toString().equals("")) {
+        if (startHour < 1 || endHour < 1 || subjectNameTextField.getText().toString().trim().isEmpty()) {
 
             return false;
         }

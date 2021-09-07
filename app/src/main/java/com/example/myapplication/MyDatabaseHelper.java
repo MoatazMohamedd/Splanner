@@ -129,6 +129,12 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
             Toast.makeText(context, "Assignment deleted successfully", Toast.LENGTH_SHORT).show();
     }
 
+    void deleteAllAssignments() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_NAME2);
+    }
+
     void addExam(String exam, String date) {
 
         SQLiteDatabase db = this.getWritableDatabase();
@@ -169,5 +175,12 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
             Toast.makeText(context, "Failed to delete", Toast.LENGTH_SHORT).show();
         else
             Toast.makeText(context, "Exam deleted successfully", Toast.LENGTH_SHORT).show();
+    }
+
+
+    void deleteAllExams() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_NAME3);
     }
 }

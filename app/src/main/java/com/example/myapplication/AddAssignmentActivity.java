@@ -122,7 +122,7 @@ public class AddAssignmentActivity extends AppCompatActivity {
     }
 
     public boolean checkRequiredFields() {
-        if (assignmentInput.getText().toString().equals("")) {
+        if (assignmentInput.getText().toString().trim().isEmpty()) {
 
             return false;
         }

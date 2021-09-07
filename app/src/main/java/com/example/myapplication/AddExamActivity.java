@@ -120,7 +120,7 @@ public class AddExamActivity extends AppCompatActivity {
     }
 
     public boolean checkRequiredFields() {
-        if (examInput.getText().toString().equals("")) {
+        if (examInput.getText().toString().trim().isEmpty()) {
 
             return false;
         }
